@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>About PawCare</title>
+  <meta name='description' content='Learn about PawCare, our mission, and the people dedicated to keeping dogs healthy and happy.' />
+  <script src='https://cdn.tailwindcss.com'></script>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap' rel='stylesheet'>
+</head>
+<body class='font-[primary-font] text-gray-800'>
+  <nav class='bg-white shadow-lg sticky top-0 z-50'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex justify-between items-center h-16'>
+        <div class='flex items-center'>
+          <a href='index.html' class='text-2xl font-bold text-gray-800 font-[primary-font]'>PawCare</a>
+        </div>
+        <div class='hidden md:flex space-x-8'>
+          <a href='index.html' class='text-gray-600 hover:text-gray-900'>Home</a>
+          <a href='about.html' class='text-gray-600 hover:text-gray-900'>About</a>
+          <a href='services.html' class='text-gray-600 hover:text-gray-900'>Services</a>
+          <a href='contact.html' class='text-gray-600 hover:text-gray-900'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-gray-600 hover:text-gray-900'>Menu</button>
+        </div>
+      </div>
+    </div>
+    <div id='mobile-menu' class='hidden md:hidden'>
+      <a href='index.html' class='block px-4 py-2'>Home</a>
+      <a href='about.html' class='block px-4 py-2'>About</a>
+      <a href='services.html' class='block px-4 py-2'>Services</a>
+      <a href='contact.html' class='block px-4 py-2'>Contact</a>
+    </div>
+  </nav>
+
+  <section class='min-h-screen bg-cover bg-center flex items-center' style='background-image: url(https://pixabay.com/get/g7811b61dd2710aa1217b433a00d5c5ee9346a90e5ad2489b652622f6871137fb52c045b557d701b2e81b64cbe86d9dc6b4df1fd57ef4cd89e0552ad366a446b4_640.jpg);'>
+    <div class='absolute inset-0 bg-black bg-opacity-40'></div>
+    <div class='relative z-10 w-full text-center text-white px-4'>
+      <h1 class='text-4xl md:text-5xl font-bold mb-4 font-[primary-font]'>Our Story</h1>
+      <p class='text-lg md:text-xl max-w-3xl mx-auto mb-6 font-[secondary-font]'>At PawCare, our mission is to create a safe, loving environment where every dog can thrive. Our team combines compassion with vetted training methods to ensure each dog leaves happier than they arrived.</p>
+      <img src='https://images.pexels.com/photos/4350195/pexels-photo-4350195.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='PawCare team with dogs' class='mx-auto rounded-lg shadow-lg w-full md:w-1/2' loading='lazy'>
+    </div>
+  </section>
+
+  <main class='py-16'>
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h2 class='text-3xl font-bold mb-6 font-[primary-font]'>Meet the PawCare Team</h2>
+      <p class='mb-6 text-gray-700'>A dedicated group of dog lovers, veterinary technicians, and certified groomers work together to deliver outstanding care.</p>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <article class='bg-white rounded-lg shadow p-4'>
+          <img src='https://images.unsplash.com/photo-1608034809014-73e7d72f25b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8aGVhZHNob3QlMjBvZiUyMGxlYWQlMjB0cmFpbmVyfGVufDB8MHx8fDE3NTk0ODk4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080' alt='Lead trainer portrait' class='w-full h-40 object-cover rounded-md mb-2'>
+          <h3 class='font-[primary-font] text-lg'>Ava Thompson — Lead Trainer</h3>
+          <p class='text-sm text-gray-700'>Specializes in positive reinforcement and canine enrichment.</p>
+        </article>
+        <article class='bg-white rounded-lg shadow p-4'>
+          <img src='https://images.pexels.com/photos/34059235/pexels-photo-34059235.png?auto=compress&cs=tinysrgb&h=650&w=940' alt='Grooming supervisor' class='w-full h-40 object-cover rounded-md mb-2'>
+          <h3 class='font-[primary-font] text-lg'>Luis Chen — Grooming Supervisor</h3>
+          <p class='text-sm text-gray-700'>Expert in coat care, safety, and dog comfort during grooming.</p>
+        </article>
+        <article class='bg-white rounded-lg shadow p-4'>
+          <img src='https://images.unsplash.com/photo-1654338776293-220b893ae0be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8dmV0ZXJpbmFyeSUyMHN1cHBvcnQlMjBzdGFmZnxlbnwwfDB8fHwxNzU5NDg5ODU2fDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Support staff with dog' class='w-full h-40 object-cover rounded-md mb-2'>
+          <h3 class='font-[primary-font] text-lg'>Maya Singh — Medical & Safety Lead</h3>
+          <p class='text-sm text-gray-700'>Ensures safety protocols and wellness checks across all services.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-gray-800 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8'>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <div>
+          <h4 class='font-[primary-font] text-lg mb-2'>PawCare</h4>
+          <p class='text-gray-300 text-sm'>Compassionate care for dogs of all ages and breeds.</p>
+        </div>
+        <div>
+          <h4 class='font-[primary-font] text-lg mb-2'>Contact</h4>
+          <p class='text-gray-300 text-sm'>123 Bark Street, Pawsville</p>
+          <p class='text-gray-300 text-sm'>(555) 123-PAWS</p>
+        </div>
+        <div>
+          <h4 class='font-[primary-font] text-lg mb-2'>Quick Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='index.html' class='text-gray-300 hover:text-white'>Home</a></li>
+            <li><a href='about.html' class='text-gray-300 hover:text-white'>About</a></li>
+            <li><a href='services.html' class='text-gray-300 hover:text-white'>Services</a></li>
+            <li><a href='contact.html' class='text-gray-300 hover:text-white'>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class='border-gray-700 my-6'>
+      <p class='text-center text-gray-400 text-sm'>&copy; 2025 PawCare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (button) {
+      button.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    }
+  </script>
+</body>
+</html>
