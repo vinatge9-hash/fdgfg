@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>PawCare — Dog Care Services</title>
+  <meta name='description' content='PawCare provides trusted dog daycare, grooming, boarding, and training services for happy, healthy dogs.' />
+  <script src='https://cdn.tailwindcss.com'></script>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap' rel='stylesheet'>
+</head>
+<body class='font-[primary-font] text-gray-800'>
+  <nav class='bg-white shadow-lg sticky top-0 z-50'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex justify-between items-center h-16'>
+        <div class='flex items-center'>
+          <a href='index.html' class='text-2xl font-bold text-gray-800 font-[primary-font]'>PawCare</a>
+        </div>
+        <div class='hidden md:flex space-x-8'>
+          <a href='index.html' class='text-gray-600 hover:text-gray-900'>Home</a>
+          <a href='about.html' class='text-gray-600 hover:text-gray-900'>About</a>
+          <a href='services.html' class='text-gray-600 hover:text-gray-900'>Services</a>
+          <a href='contact.html' class='text-gray-600 hover:text-gray-900'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-gray-600 hover:text-gray-900'>Menu</button>
+        </div>
+      </div>
+    </div>
+    <div id='mobile-menu' class='hidden md:hidden'>
+      <a href='index.html' class='block px-4 py-2'>Home</a>
+      <a href='about.html' class='block px-4 py-2'>About</a>
+      <a href='services.html' class='block px-4 py-2'>Services</a>
+      <a href='contact.html' class='block px-4 py-2'>Contact</a>
+    </div>
+  </nav>
+
+  <section class='min-h-screen bg-cover bg-center flex items-center' style='background-image: url(https://images.pexels.com/photos/5426885/pexels-photo-5426885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);'>
+    <div class='absolute inset-0 bg-black bg-opacity-40'></div>
+    <div class='relative z-10 w-full text-center text-white px-4'>
+      <span class='block text-sm uppercase tracking-widest mb-2 font-semibold font-[secondary-font]'>Dog Care</span>
+      <h1 class='text-4xl md:text-6xl font-bold mb-4 font-[primary-font]'>Caring for Your Best Friend</h1>
+      <p class='text-lg md:text-2xl mb-8 max-w-2xl mx-auto font-[secondary-font]'>Premium daycare, grooming, training, and boarding services designed to keep tails wagging and dogs smiling.</p>
+      <div class='flex justify-center gap-4'>
+        <a href='services.html' class='bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300 shadow'>Explore Services</a>
+        <a href='contact.html' class='border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300'>Book a Tour</a>
+      </div>
+    </div>
+  </section>
+
+  <main class='py-16'>
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h2 class='text-3xl font-bold mb-6 font-[primary-font]'>Why PawCare?</h2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <article class='bg-white rounded-lg shadow p-6'>
+          <img src='https://pixabay.com/get/g577bf18a0321dfad536bb728be1ffc4b69b2dd2f8947331fa703a53d8ddc5993986b4383b49fd7328744285ffe76af864b9b34d9597c94249417c72b15e86a93_640.jpg' alt='Happy dog getting grooming' class='w-full h-48 object-cover rounded-md mb-4' loading='lazy'>
+          <h3 class='text-xl font-semibold font-[primary-font] mb-2'>Grooming & Spa</h3>
+          <p class='text-sm text-gray-700'>Gentle grooming, bath, nail trims, and coat care performed by trained staff.</p>
+        </article>
+        <article class='bg-white rounded-lg shadow p-6'>
+          <img src='https://pixabay.com/get/g23066a6ff93afdb448aced55b5ccf2f8bae99be191c019295f9eb9dfcbb3a2025b9d25349b19bf42785a25d59204bf3866fe60996ff4b5eec55dd5d8cc873700_640.jpg' alt='Dogs playing in supervised play area' class='w-full h-48 object-cover rounded-md mb-4' loading='lazy'>
+          <h3 class='text-xl font-semibold font-[primary-font] mb-2'>Daycare & Socialization</h3>
+          <p class='text-sm text-gray-700'>Structured play, rest times, and supervision for safe social interaction.</p>
+        </article>
+        <article class='bg-white rounded-lg shadow p-6'>
+          <img src='https://pixabay.com/get/g74889d551653f7233ce1cbabf0a1ff289360be3b6df433e61a5b95b63da5d43e9edc863b40b18c3e7c5afc7c5d570bb0a0119653b5f15f8c7c9f6483435a66dd_640.jpg' alt='Staff walking dogs outside' class='w-full h-48 object-cover rounded-md mb-4' loading='lazy'>
+          <h3 class='text-xl font-semibold font-[primary-font] mb-2'>Boarding & Training</h3>
+          <p class='text-sm text-gray-700'>Comfortable boarding and positive reinforcement training to reinforce good manners.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-gray-800 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8'>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <div>
+          <h4 class='font-[primary-font] text-lg mb-2'>PawCare</h4>
+          <p class='text-gray-300 text-sm'>Caring for dogs with a focus on safety, comfort, and happiness.</p>
+        </div>
+        <div>
+          <h4 class='font-[primary-font] text-lg mb-2'>Contact</h4>
+          <p class='text-gray-300 text-sm'>123 Bark Street, Pawsville</p>
+          <p class='text-gray-300 text-sm'>(555) 123-PAWS</p>
+        </div>
+        <div>
+          <h4 class='font-[primary-font] text-lg mb-2'>Quick Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='index.html' class='text-gray-300 hover:text-white'>Home</a></li>
+            <li><a href='about.html' class='text-gray-300 hover:text-white'>About</a></li>
+            <li><a href='services.html' class='text-gray-300 hover:text-white'>Services</a></li>
+            <li><a href='contact.html' class='text-gray-300 hover:text-white'>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class='border-gray-700 my-6'>
+      <p class='text-center text-gray-400 text-sm'>&copy; 2025 PawCare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile menu toggle
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (button) {
+      button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
